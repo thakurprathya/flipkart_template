@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root{ /*here we create a variable, it allows us to use this variable in our whole doc easily and add variations to it,root here 
+    refers to whole html doc, using this prop we can also decide which colour suits our website*/
+    --main-bg-color: #2874f0;
+}
+
+*{margin: 0; padding: 0;}
+header{
+    height: 10vh;  background-color:var(--main-bg-color); color: white; font-family: 'Rubik Moonrocks', cursive;}
+nav{
+    display:flex; align-items: center; height: 10vh;}
+.logo img{
+    width: 88px;  padding: 0 25px;}
+.search_bar input{
+    width: 32vw;  height: 28px;  border: 1px solid black;  padding: 0 12px; /*padding controls placeholder and search starting position*/}
+nav ul{ /*for aligning items height of ul should be equal to footer else make footer flex*/
+    height:10vh;  display:flex; align-items: center;}
+nav ul li{
+    list-style: none;  padding: 0 1.5vw;}
+nav ul li a{
+    color: rgb(214, 213, 213);  text-decoration: none;}
+nav ul li a:hover{
+    color: white;  font-weight: bold;}
+footer{
+    height: 10vh;  background-color:var(--main-bg-color);  color: white;  font-family: 'Rubik Moonrocks', cursive;}
+.container{
+    min-height: calc(100vh - 12vh - 10vh); }
+.slider{
+    width: 98vw;  margin: 30px 14px; display: flex; align-items: center; overflow: hidden;}/* for responsiveness we have done; slider-overflow;hidden, as it will hide extra image  */
+.svg-arrow{ 
+    width: 24px; height: 27px; margin-top: 38px; margin-left: 8px;}
+.shifter{
+    display: flex; position: absolute;} /*no need of any justifying content as we introduce spacing box in flexbox shifter
+    here position absoulte plays a major role of overiding shifter above the slider image*/
+.shifter div{
+    width: 44px; height: 104px; background-color:hsla(0,0%,100%,.98); box-shadow: 0 1px 5px 0 rgba(0,0,0,.11);}
+.card{
+    max-width: 95vw;  margin: auto; font-family: 'Ubuntu', sans-serif; background-color: white; }
+.card h2{
+    margin: 22px;  padding-top: 22px;}
+.card-items{
+    padding-top: 10px; display: flex; overflow: scroll; } /*for seeing overflow work we need to
+    set left right margins as, justify content space around changes depending upon the no. of images, after setting margins try adding more pics
+    we can also set overflow to scroll try it yourself*/
+.item{
+    padding-bottom: 9px; max-width: 95vw; margin: 0 .7vw;} /*max width copying from card best for responsiveness use max width only*/

@@ -1,0 +1,279 @@
+<!-- create homepage for an E-commerce website use media query to make it responsive -->
+<!-- correct way of creating an project is make it in a seprate folder with different folder for css and javascript and
+those files should be included in index file using links. -->
+<!-- we can include google fonts in html file(link option) and also in css file directly(import option) also have to 
+    include font family in particular element-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYcart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/flipkart-plus_8d85f4.png" alt="">
+            </div>
+            <div class="search_bar">
+                <input type="text" placeholder="Search Here">
+                <button>Search</button>
+            </div>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <div class="shifter">
+                    <button id="b1">
+                        <div id="div1-slider-shifter" class="slider-btns">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-arrow">
+                                <path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <div id="spacing-box"></div>
+                    <button>
+                        <div id="div2-slider-shifter" class="slider-btns">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-arrow">
+                                <path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"/>
+                            </svg>
+                        </div>
+                    </button id="b2">
+                </div>
+                <!-- <img src="https://source.unsplash.com/random/1410x400"> -->
+                <img src="https://rb.gy/jdpjef" class="slider-images">
+                <img src="https://rb.gy/avvgit" class="slider-images">
+                <img src="https://rb.gy/b9lvqn" class="slider-images">
+                <img src="https://rb.gy/m4w0h7" class="slider-images">
+                <img src="https://rb.gy/rgvyxs" class="slider-images">
+            </div>
+            <div class="card">
+                <h2>Deals of The Day</h2>
+                <hr>
+                <div class="card-items">
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?cricket" alt="">
+                        <div class="lines">
+                            <p class="m1">Cricket equipments</p>
+                            <p class="m2">20% off Grab Now</p>
+                            <p class="m3">Top Brands</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?bicycles" alt="">
+                        <div class="lines">
+                            <p class="m1">Bicycles and equipments</p>
+                            <p class="m2">30% off Grab Now</p>
+                            <p class="m3">All Gears available</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?watches" alt="">
+                        <div class="lines">
+                            <p class="m1">Branded Watches</p>
+                            <p class="m2">40% off Grab Now</p>
+                            <p class="m3">Top Brands</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?sunglasses,eyewears,spex " alt="">
+                        <div class="lines">
+                            <p class="m1">Stylish Eyewears</p>
+                            <p class="m2">Starting from ₹1299/-</p>
+                            <p class="m3">International Brands</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?kitchen,Dining,crockery" alt="">
+                        <div class="lines">
+                            <p class="m1">Kitchen & Dining sets</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Materials available</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?kitchen,Dining,crockery" alt="">
+                        <div class="lines">
+                            <p class="m1">Kitchen & Dining sets</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Materials available</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?kitchen,Dining,crockery" alt="">
+                        <div class="lines">
+                            <p class="m1">Kitchen & Dining sets</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Materials available</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?kitchen,Dining,crockery" alt="">
+                        <div class="lines">
+                            <p class="m1">Kitchen & Dining sets</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Materials available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Bestsellers</h2>
+                <hr>
+                <div class="card-items">
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?mobiles,phones,Smartphones" alt="">
+                        <div class="lines">
+                            <p class="m1">Smartphones and Accessories</p>
+                            <p class="m2">10% off Grab Now</p>
+                            <p class="m3">Top Brands</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?headphones,Earphones,earbuds" alt="">
+                        <div class="lines">
+                            <p class="m1">Headphones & Earphones</p>
+                            <p class="m2">Starting from ₹499/-</p>
+                            <p class="m3">All Gears available</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?home-decor" alt="">
+                        <div class="lines">
+                            <p class="m1">Stylish Home Decor</p>
+                            <p class="m2">70% off Grab Now</p>
+                            <p class="m3">Never Before Prices</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?Wireless-speakers, bluetooth-speakers, speakers " alt="">
+                        <div class="lines">
+                            <p class="m1">Boat,Sony,Infinity,Bose</p>
+                            <p class="m2">Starting from ₹2999/-</p>
+                            <p class="m3">International Brands</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?jewelery,Neclace,earrigns" alt="">
+                        <div class="lines">
+                            <p class="m1">Neclace, Earrings</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Get Trendy Look</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?jewelery,Neclace,earrigns" alt="">
+                        <div class="lines">
+                            <p class="m1">Neclace, Earrings</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Get Trendy Look</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?jewelery,Neclace,earrigns" alt="">
+                        <div class="lines">
+                            <p class="m1">Neclace, Earrings</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Get Trendy Look</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?jewelery,Neclace,earrigns" alt="">
+                        <div class="lines">
+                            <p class="m1">Neclace, Earrings</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Get Trendy Look</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Electronics</h2>
+                <hr>
+                <div class="card-items">
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?mobiles,phones,Smartphones" alt="">
+                        <div class="lines">
+                            <p class="m1">Smartphones and Accessories</p>
+                            <p class="m2">10% off Grab Now</p>
+                            <p class="m3">Top Brands</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?headphones,Earphones,earbuds" alt="">
+                        <div class="lines">
+                            <p class="m1">Headphones & Earphones</p>
+                            <p class="m2">Starting from ₹499/-</p>
+                            <p class="m3">All Gears available</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?home-decor" alt="">
+                        <div class="lines">
+                            <p class="m1">Stylish Home Decor</p>
+                            <p class="m2">70% off Grab Now</p>
+                            <p class="m3">Never Before Prices</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?Wireless-speakers, bluetooth-speakers, speakers " alt="">
+                        <div class="lines">
+                            <p class="m1">Boat,Sony,Infinity,Bose</p>
+                            <p class="m2">Starting from ₹2999/-</p>
+                            <p class="m3">International Brands</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?jewelery,Neclace,earrigns" alt="">
+                        <div class="lines">
+                            <p class="m1">Neclace, Earrings</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Get Trendy Look</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?jewelery,Neclace,earrigns" alt="">
+                        <div class="lines">
+                            <p class="m1">Neclace, Earrings</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Get Trendy Look</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?jewelery,Neclace,earrigns" alt="">
+                        <div class="lines">
+                            <p class="m1">Neclace, Earrings</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Get Trendy Look</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://source.unsplash.com/180x180/?jewelery,Neclace,earrigns" alt="">
+                        <div class="lines">
+                            <p class="m1">Neclace, Earrings</p>
+                            <p class="m2">Starting from ₹899/-</p>
+                            <p class="m3">Get Trendy Look</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex_allcenter">
+        <p>Copyright &copy; MYcart.com</p>
+    </footer>
+
+    <script src="JS/slider.js"></script>
+</body>
+</html>
